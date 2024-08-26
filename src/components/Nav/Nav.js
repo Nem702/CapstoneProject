@@ -1,7 +1,7 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import React from "react";
 import "../Nav/Nav.css";
-import { ReactComponent as Logo } from "../../assets/Logo .svg"
+import { ReactComponent as Logo } from "../../assets/Logo .svg";
 
 const Navbar = () => {
   return (
@@ -15,6 +15,8 @@ const Navbar = () => {
         <CustomLink to="/">Menu</CustomLink>
         <CustomLink to="/bookingPage">Reservations</CustomLink>
       </ul>
+      <i class="fa-solid fa-xmark"></i>
+      <i class="fa-solid fa-bars"></i>
     </nav>
   );
 };
