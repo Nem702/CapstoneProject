@@ -1,0 +1,23 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  flex-wrap: wrap;
+  background-color: #EDEFEE;
+}
+.footerImg {
+  max-width: 200px;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.dormantNavigation {
+  display: inline-grid;
+}
+.socialMediaLinks {
+  display: inline-grid;
+}
