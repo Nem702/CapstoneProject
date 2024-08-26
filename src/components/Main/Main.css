@@ -1,0 +1,86 @@
+main {
+  display: block;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px 0;
+}
+/* Specials */
+.specialsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 0 0 0;
+}
+
+.specialsContainer button {
+  background-color: #333333;
+  color: #edefee;
+  height: 40px;
+  font-weight: 600;
+}
+
+.specialsContainer button:hover {
+  background-color: #f4ce14;
+  color: #495e57;
+}
+
+/* Specials container */
+.cardsContainer {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, 265px);
+  gap: 50px;
+  justify-content: center;
+}
+
+.card img {
+  height: 185px;
+  width: 265px;
+  border-radius: 16px 16px 0 0;
+}
+
+.card {
+  background-color: #495e57;
+  border-radius: 16px;
+  box-shadow: 1px 2px 10px 2px #5a5a5a;
+  color: #f4ce14;
+}
+
+.card p {
+  padding: 0 20px;
+  color: #edefee;
+}
+
+.titleNprice {
+  padding: 0 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.price {
+  color: #333333;
+  font-weight: 600;
+}
+
+.orderDelivery {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #f4ce14;
+}
+
+.orderDelivery:hover{
+  color: #edefee;
+}
+/* About */
+.about {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+}
+.aboutRight img {
+  max-width: 300px;
+}

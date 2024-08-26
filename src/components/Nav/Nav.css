@@ -1,0 +1,35 @@
+nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: #EDEFEE;
+    box-shadow: 5px 5px 10px 2px #5a5a5a;
+}
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar li:hover {
+    color: #495E57;
+}
+
+.navbar li.active {
+    color: #F4CE14;
+}

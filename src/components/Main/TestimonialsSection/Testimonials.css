@@ -1,0 +1,18 @@
+.testimonialsWarapper{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 265px);
+    justify-content: center;
+    gap:20px;
+    padding: 100px 0;
+  }
+
+  .ratingCard{
+    text-align: center;
+    justify-content: center;
+    background-color: #8a8a8a;
+    border-radius: 6px;
+  }
+
+  .ratingCard img{
+    max-width: 165px;
+  }
