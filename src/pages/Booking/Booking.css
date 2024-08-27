@@ -1,9 +1,8 @@
 form {
   display: grid;
-  max-width: 200px;
   gap: 20px;
   padding: 40px 20px;
-  background-color: #495E57;
+  background-color: #495e57;
   border-radius: 16px;
   font-weight: 600;
   box-shadow: 5px 5px 10px 2px #5a5a5a;
@@ -11,27 +10,30 @@ form {
 .formWrapper {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
-  padding: 10% 0;
-  color: #F4CE14;
+  margin: 10% 0;
+  padding: 8% 0;
+  color: #f4ce14;
 }
-#res-date, #res-time, #guests, #occasion{
-    border: none;
-    padding: 5px;
-    border-radius: 6px;
+#res-date,
+#res-time,
+#guests,
+#occasion, #email {
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
 }
 
 /* Button */
 .submitBtn {
-    padding: 10px;
-    border-radius: 6px;
-    background-color: #fff;
-    border: none;
-    color: #000000;
-    font-weight: 500;
-    font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.submitBtn:hover{
-    background-color: #F4CE14;
+.submitBtn:hover {
+  background-color: #f4ce14;
 }

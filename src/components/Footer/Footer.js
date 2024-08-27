@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
-import "./Footer.css"
-import Restaurant from "../../assets/Logo.svg";
+import "./Footer.css";
+import { ReactComponent as Logo } from "../../assets/Logo .svg";
+
 const Footer = () => {
   return (
     <footer>
-      <img className="footerImg" src={Restaurant} alt="chef"></img>
+      <Link to="/" className="Logo">
+        <Logo />
+      </Link>
       <div className="dormantNavigation">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/reservations">Reservations</Link>
-        <Link to="/orderOnline">Order Online</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/">About</Link>
+        <Link to="/">Menu</Link>
+        <Link to="/BookingPage">Reservations</Link>
       </div>
       <div className="contact">
         <p>Address: 1234 Random address, City</p>
@@ -19,13 +20,22 @@ const Footer = () => {
         <p>E-mail: random@email.com</p>
       </div>
       <div className="socialMediaLinks">
-        <Link to="/facebook.com">Facebook</Link>
-        <Link to="/facebook.com">Facebook</Link>
-        <Link to="/facebook.com">Facebook</Link>
-        <Link to="/facebook.com">Facebook</Link>
+        <Link to="/">
+          <i className="fa-brands fa-square-facebook"></i> Facebook{" "}
+        </Link>
+        <Link to="/">
+          <i className="fa-brands fa-instagram"></i> Instagram
+        </Link>
+        <Link to="/">
+          <i className="fa-brands fa-yelp"></i> Yelp
+        </Link>
+        <Link to="/">
+          <i className="fa-brands fa-react"></i> React
+        </Link>
       </div>
     </footer>
   );
 };
+
 
 export default Footer;

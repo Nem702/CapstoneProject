@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Booking.css";
+// import { Link } from "react-router-dom";
+// import { render } from "@testing-library/react";
+// import CustomMessage from "../../components/CustomMessage/CustomMessage";
 
 const BookingForm = () => {
   const [resDate, setResDate] = useState("");
@@ -16,6 +19,7 @@ const BookingForm = () => {
       guests,
       occasion
     })
+    alert("Your reservation submission was successful!")
   };
 
   return (
@@ -29,12 +33,14 @@ const BookingForm = () => {
           }}
           type="date"
           id="res-date"
+          required
         ></input>
         <label htmlFor="res-time">Choose time</label>
         <select
           value={resTime}
           onChange={(e) => setResTime(e.target.value)}
           id="res-time"
+          required
         >
           <option>17:00</option>
           <option>18:00</option>
@@ -62,7 +68,12 @@ const BookingForm = () => {
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input className="submitBtn" type="submit" value="Make Your reservation"></input>
+        <label htmlFor="email">E-mail </label>
+        <input placeholder="email@example.com" type="email" required id="email"></input>
+        {/* <button to="/CustomMessagePage" className="submitBtn" type="submit">Submit Reservation */}
+        {/* <Link to="/CustomMessagePage"> */}
+          <button className="submitBtn" type="submit" required>Submit Reservation</button>
+        {/* </Link> */}
       </form>
     </div>
   );

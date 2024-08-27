@@ -1,18 +1,31 @@
-.testimonialsWarapper{
-    display: grid;
-    grid-template-columns:repeat(auto-fit, 265px);
-    justify-content: center;
-    gap:20px;
-    padding: 100px 0;
-  }
+.testimonialsWarapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 265px);
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 0;
+}
 
-  .ratingCard{
-    text-align: center;
-    justify-content: center;
-    background-color: #8a8a8a;
-    border-radius: 6px;
-  }
+.ratingCard {
+  text-align: center;
+  justify-content: center;
+  background-color: #8a8a8a;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.ratingCard:hover{
+  background-color: #495e57;
+  color: #fff;
+  box-shadow: 1px 2px 10px 2px #5a5a5a;
+  transform: translateY(-12px);
+}
 
-  .ratingCard img{
-    max-width: 165px;
-  }
+.ratingCard img {
+  max-width: 165px;
+}
+.ratingCard p {
+  padding: 0 20px;
+}
+.fa-star {
+  color: #f4ce14;
+}

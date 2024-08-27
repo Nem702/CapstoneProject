@@ -1,22 +1,34 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import React from "react";
+import React,{useState} from "react";
 import "../Nav/Nav.css";
 import { ReactComponent as Logo } from "../../assets/Logo .svg";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
   return (
-    <nav className="navbar">
+    <nav >
       <Link to="/" className="Logo">
         <Logo />
       </Link>
-      <ul>
+      <ul className="navbar" style={{right: menuOpen ? '0' : '99999999px'}}>
+      <button className="closeMenuBtn" onClick={closeMenu}><i className="fa-solid fa-xmark" ></i></button>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/">About</CustomLink>
         <CustomLink to="/">Menu</CustomLink>
         <CustomLink to="/bookingPage">Reservations</CustomLink>
+        
       </ul>
-      <i class="fa-solid fa-xmark"></i>
-      <i class="fa-solid fa-bars"></i>
+      <div className="responsiveMenu">
+      <button className="openMenuBtn" onClick={openMenu}><i className="fa-solid fa-bars"></i></button>
+      </div>
     </nav>
   );
 };

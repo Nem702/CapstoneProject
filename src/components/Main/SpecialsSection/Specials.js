@@ -21,7 +21,7 @@ const Specials = () => {
             <p className="price">$5.99</p>
           </div>
           <p>
-            The famous greek salad of crispy lettuce, peppers, olives and our
+          Greek salad, also known as Horiatiki, is a vibrant and refreshing dish from Greek cuisine. The famous greek salad of crispy lettuce, peppers, olives and our
             Chicago style feta cheese, garnished with crunchy garlic and
             rosemary croutons.{" "}
           </p>
@@ -36,9 +36,7 @@ const Specials = () => {
             <p className="price">$9.99</p>
           </div>
           <p>
-            The famous Bruschetta of crispy lettuce, peppers, olives and our
-            Chicago style feta cheese, garnished with crunchy garlic and
-            rosemary croutons.{" "}
+            The famous Bruschetta a delightful Italian appetizer made with grilled or toasted bread rubbed with garlic and topped with various ingredients. The classic version features Itallian herbs, ripe tomatoes, fresh basil, and garlic.{" "}
           </p>
           <Link className="orderDelivery" to="/">
             Order Delivery
@@ -51,9 +49,7 @@ const Specials = () => {
             <p className="price">$6.99</p>
           </div>
           <p>
-            The famous greek salad of crispy lettuce, peppers, olives and our
-            Chicago style feta cheese, garnished with crunchy garlic and
-            rosemary croutons.{" "}
+          A classic dessert made with double cream, golden caster sugar, and fresh lemons. The cream and sugar are heated together, and then lemon juice and zest are added, creating a creamy, citrusy treat that balances tanginess and sweetness.{" "}
           </p>
           <Link className="orderDelivery" to="/">
             Order Delivery
