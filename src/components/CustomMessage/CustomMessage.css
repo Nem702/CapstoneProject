@@ -1,0 +1,11 @@
+.customMessageWrapper {
+  justify-content: center;
+  margin-top: 20%;
+  padding: 8% 15%;
+  text-align: center;
+  height: 60vh;
+}
+.fa-square-check{
+    font-size: 100px;
+    color: #279731;
+}

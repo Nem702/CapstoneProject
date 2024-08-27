@@ -1,6 +1,6 @@
 footer {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(auto-fit, 190px);
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -20,4 +20,9 @@ footer {
 }
 .socialMediaLinks {
   display: inline-grid;
+}
+.socialMediaLinks a:hover, .dormantNavigation a:hover{
+  color: #f4ce14;
+  background-color: #495e57;
+  border-radius: 6px;
 }

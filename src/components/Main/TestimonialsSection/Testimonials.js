@@ -8,28 +8,28 @@ const Testimonials = () => {
     return(
         <div className="testimonialsWarapper">
             <div className="ratingCard">
-                <h4>Rating</h4>
-                <h4>Name</h4>
+                <h4>Rating: 5/5 <i class="fa-solid fa-star"></i>'s</h4>
+                <h4>Julia</h4>
                 <img className="TestimonialsImg" src={Client1} alt="mario and adrian"></img>
-                <p>Review text</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati laborum unde facilis voluptates id perspiciatis illo qui sequi necessitatibus dicta.</p>
             </div>
             <div className="ratingCard">
-                <h4>Rating</h4>
-                <h4>Name</h4>
+                <h4>Rating: 5/5 <i class="fa-solid fa-star"></i>'s</h4>
+                <h4>Jimmy</h4>
                 <img className="TestimonialsImg" src={Client2} alt="mario and adrian"></img>
-                <p>Review text</p>
+                <p>Earum dolore, mollitia cum exercitationem ullam quam fugiat molestias doloribus modi nulla nobis. Ullam eaque, labore enim impedit animi libero officia aliquam!</p>
             </div>
             <div className="ratingCard">
-                <h4>Rating</h4>
-                <h4>Name</h4>
+                <h4>Rating: 5/5 <i class="fa-solid fa-star"></i>'s</h4>
+                <h4>Maria</h4>
                 <img className="TestimonialsImg" src={Client3} alt="mario and adrian"></img>
-                <p>Review text</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa et natus, nam iusto odio corrupti facilis impedit quod cupiditate quidem ipsum numquam provident repellat obcaecati necessitatibus harum tenetur? Culpa, quisquam?</p>
             </div>
             <div className="ratingCard">
-                <h4>Rating</h4>
-                <h4>Name</h4>
+                <h4>Rating: 5/5 <i class="fa-solid fa-star"></i>'s</h4>
+                <h4>Bob Billy</h4>
                 <img className="TestimonialsImg" src={Client4} alt="mario and adrian"></img>
-                <p>Review text</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
         </div>
     )

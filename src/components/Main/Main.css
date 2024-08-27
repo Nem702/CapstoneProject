@@ -29,6 +29,7 @@ main {
   grid-template-columns:repeat(auto-fit, 265px);
   gap: 50px;
   justify-content: center;
+  z-index: 1;
 }
 
 .card img {
@@ -42,11 +43,15 @@ main {
   border-radius: 16px;
   box-shadow: 1px 2px 10px 2px #5a5a5a;
   color: #f4ce14;
+  transition: 0.3s;
 }
 
 .card p {
   padding: 0 20px;
   color: #edefee;
+}
+.card:hover{
+  transform: scale(1.05);
 }
 
 .titleNprice {
@@ -78,9 +83,34 @@ main {
 .about {
   padding: 100px 0;
   display: grid;
-  grid-template-columns: repeat(2, 300px);
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
+  gap: 20px;
+  background-color: #495e57;
 }
+.aboutLeft{
+  background-color: #edefee;
+  border-radius: 6px;
+  box-shadow: 1px 2px 10px 2px #5a5a5a;
+  padding: 20px;
+  transition: 0.3s;
+}
+
 .aboutRight img {
   max-width: 300px;
+}
+.aboutImg, .aboutImg2{
+  border-radius: 6px;
+  box-shadow: 1px 2px 10px 2px #5a5a5a;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+.aboutImg:hover, .aboutImg2:hover{
+  box-shadow: 3px 5px 10px 2px #7a993f;
+  transform: translateX(20px)
+}
+.aboutLeft:hover{
+  box-shadow: 3px 5px 10px 2px #7a993f;
+  transform: translateY(-20px);
 }
